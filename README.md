@@ -1,6 +1,6 @@
 # Anime Archive
 
-- [Motivation](#contributors)
+- [Motivation](#motivation)
 - [Build Status](#build-status)
 - [Contributors](#contributors)
 - [Project Overview](#project-overview)
