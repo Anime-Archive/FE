@@ -1,9 +1,12 @@
-import './index.css';
+import "./index.css";
+
+//Pages
+import Landing from "./Pages/Landing/Landing.js";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World!!!!!</h1>
+      <Landing />
     </div>
   );
 }
