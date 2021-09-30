@@ -8,7 +8,7 @@
 - [API References](#api-reference)
 
 ## Motivation
-To create is a web platform where you can quickly learn about top anime and manga, and search for new titles to watch or read.
+To create a web platform where you can quickly learn about top anime and manga, and search for new titles to watch or read.
 ## Build status
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2e34f940-debc-4444-a918-5266486e0cb1/deploy-status)](https://app.netlify.com/sites/friendly-lamarr-ed5b43/deploys)
 ## Contributors
