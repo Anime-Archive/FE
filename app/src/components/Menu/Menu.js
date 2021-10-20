@@ -12,6 +12,8 @@ import {
   ListItemText,
   List,
   ListItemButton,
+  Tooltip,
+  Fade,
 } from "@mui/material";
 
 // Styles
@@ -47,16 +49,27 @@ export const Menu = () => {
 
                 {category.sections.map((section) => (
                   // Links
-                  <ListItemButton
-                    selected={location.pathname === section.path}
-                    key={section.name}
-                    onClick={() => {
-                      history.push(section.path);
-                    }}
+                  <Tooltip
+                    enterDelay={500}
+                    enterNextDelay={500}
+                    disableInteractive
+                    describeChild
+                    title={section.name}
+                    TransitionComponent={Fade}
+                    TransitionProps={{ timeout: 500 }}
+                    placement="right"
                   >
-                    <ListItemIcon>{section.icon}</ListItemIcon>
-                    <ListItemText secondary={section.name} />
-                  </ListItemButton>
+                    <ListItemButton
+                      selected={location.pathname === section.path}
+                      key={section.name}
+                      onClick={() => {
+                        history.push(section.path);
+                      }}
+                    >
+                      <ListItemIcon>{section.icon}</ListItemIcon>
+                      <ListItemText secondary={section.name} />
+                    </ListItemButton>
+                  </Tooltip>
                 ))}
 
                 {/* Divider */}
