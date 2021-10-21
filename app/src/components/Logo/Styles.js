@@ -14,6 +14,7 @@ export const useStyles = makeStyles((theme) => {
       alignItems: "center",
       padding: ` 0 ${theme.spacing(2)}`,
       margin: `${theme.spacing(2)} 0`,
+      cursor: "pointer",
     },
   };
 });
