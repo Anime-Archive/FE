@@ -1,5 +1,8 @@
 import React from "react";
 
+//Routing
+import { useHistory, useLocation } from "react-router";
+
 // Components
 import { Logo } from "../Logo/Logo.js";
 
@@ -18,7 +21,6 @@ import {
 
 // Styles
 import { useStyles } from "./Styles.js";
-import { useHistory, useLocation } from "react-router";
 
 // Content
 import { content } from "./Content.js";
