@@ -1,6 +1,6 @@
 import { makeStyles } from "@mui/styles";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   active: {
     color: "#010101",
   },
@@ -22,13 +22,19 @@ const useStyles = makeStyles({
     display: "flex",
   },
   image: {
-    width: "276px",
     height: "415px",
+    width: "276px",
+  },
+  cardInfo: {
+    overflow: "hidden",
   },
   cardTitle: {
     width: "521px",
   },
-  next: {
+  cardDesc: {
+    color: theme.palette.text.secondary,
+  },
+  nextBtn: {
     width: "35px",
     height: "415px",
     background: "#FFFFFF",
@@ -47,6 +53,6 @@ const useStyles = makeStyles({
     justifyContent: "center",
     alignItems: "center",
   },
-});
+}));
 
 export default useStyles;
